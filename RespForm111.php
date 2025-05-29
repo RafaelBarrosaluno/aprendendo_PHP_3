@@ -31,5 +31,11 @@ echo "O carrinho possui " . $carrinho->itens["camiseta"] . " camisetas. <br> <br
 $carrinho->remove_item("bermuda",2);
 echo "O carrinho possui " . $carrinho->itens["shorts"] . " shorts. <br>";
 echo "O carrinho possui " . $carrinho->itens["bermuda"] . " bermudas. <br>";
-echo "O carrinho possui " . $carrinho->itens["camiseta"] . " camisetas. <br>";
+echo "O carrinho possui " . $carrinho->itens["camiseta"] . " camisetas. <br> <br>";
+$carrinho->remove_item("shorts",10);
+$carrinho->remove_item("bermuda",1);
+$carrinho->remove_item("camiseta",4);
+echo "O carrinho possui " . $carrinho->itens["shorts"] . " shorts. <br>";
+echo "O carrinho possui " . $carrinho->itens["bermuda"] . " bermudas. <br>";
+echo "O carrinho possui " . $carrinho->itens["camiseta"] . " camisetas. <br> <br>";
 ?>
